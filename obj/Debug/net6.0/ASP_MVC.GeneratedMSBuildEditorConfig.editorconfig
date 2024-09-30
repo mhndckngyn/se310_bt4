@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/ducminh/RiderProjects/ASP_MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/ducminh/RiderProjects/ASP_MVC/Views/Hello/HocMVCKhongKho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVsbG8vSG9jTVZDS2hvbmdLaG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ducminh/RiderProjects/ASP_MVC/Views/Hello/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVsbG8vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/ducminh/RiderProjects/ASP_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
