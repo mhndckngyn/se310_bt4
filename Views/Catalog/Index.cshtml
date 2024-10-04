@@ -1,0 +1,31 @@
+@model System.Collections.Generic.List<ASP_MVC.Models.DTO.CatalogDto>
+
+@{
+    ViewBag.Title = "Catalog";
+    Layout = "_Layout";
+}
+
+<h2>Catalog</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th scope="col">CatalogCode</th>
+        <th scope="col">CatalogName</th>
+        <th scope="col">Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var catalog in Model)
+    {
+    <tr>
+        <td>@catalog.CatalogCode</td>
+        <td>@catalog.CatalogName</td>
+        <td>
+            <a href="@Url.Action("DeleteCatalog", "Catalog", new { id = catalog.Id })">Delete</a>
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>
