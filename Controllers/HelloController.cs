@@ -18,6 +18,7 @@ public class HelloController : Controller
     public IActionResult HocMVCKhongKho()
     {
         ViewBag.Message = "Tra loi: Hoc MVC ntn?";
+        ViewBag.Answer = "MVC khong kho";
         return View();
     }
 }
