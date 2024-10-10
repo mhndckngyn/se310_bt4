@@ -16,3 +16,20 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}

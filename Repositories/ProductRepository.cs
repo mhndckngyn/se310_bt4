@@ -1,48 +1,63 @@
-using System.Data.SqlClient;
 using ASP_MVC.Models.DTO;
-using Microsoft.CodeAnalysis.Recommendations;
-using Microsoft.Data.SqlClient;
+using Npgsql;
 
-namespace ASP_MVC.Repositories;
-
-public class ProductRepository
+namespace ASP_MVC.Repositories
 {
-    private readonly string _connectionString;
-
-    public ProductRepository(string connectionString)
+    public class ProductRepository
     {
-        _connectionString = connectionString;
-    }
+        private readonly string _connectionString;
 
-    public List<ProductDto> GetProducts()
-    {
-        var products = new List<ProductDto>();
-
-        using (SqlConnection connection = new SqlConnection(_connectionString))
+        public ProductRepository(string connectionString)
         {
-            connection.Open();
-            string query = "Select Id, ProductCode, ProductName, Picture, UnitPrice from Product";
-            using (SqlCommand command = new SqlCommand(query, connection))
+            _connectionString = connectionString;
+        }
+
+        public List<ProductDto> GetProducts()
+        {
+            var products = new List<ProductDto>();
+
+            using (var connection = new NpgsqlConnection(_connectionString)) // Use NpgsqlConnection
             {
-                using (SqlDataReader reader = command.ExecuteReader())
+                connection.Open();
+                string query = "SELECT Id, CatalogId, ProductCode, ProductName, Picture, UnitPrice FROM Product";
+
+                using (var command = new NpgsqlCommand(query, connection)) // Use NpgsqlCommand
                 {
-                    while (reader.Read())
+                    using (var reader = command.ExecuteReader())
                     {
-                        var product = new ProductDto()
+                        while (reader.Read())
                         {
-                            Id = Convert.ToInt32(reader["Id"]),
-                            ProductCode = reader["ProductCode"].ToString(),
-                            ProductName = reader["ProductName"].ToString(),
-                            Picture = reader["Picture"].ToString(),
-                            UnitPrice = Convert.ToSingle(reader["UnitPrice"])
-                        };
-                        
-                        products.Add(product);
+                            var product = new ProductDto()
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                CatalogId = Convert.ToInt32(reader["CatalogId"]),
+                                ProductCode = reader["ProductCode"].ToString(),
+                                ProductName = reader["ProductName"].ToString(),
+                                Picture = reader["Picture"].ToString(),
+                                UnitPrice = Convert.ToSingle(reader["UnitPrice"])
+                            };
+
+                            products.Add(product);
+                        }
                     }
                 }
             }
+
+            return products;
         }
 
-        return products;
+        public void DeleteProduct(int id)
+        {
+            using (var connection = new NpgsqlConnection(_connectionString))
+            {
+                connection.Open();
+                string query = "DELETE FROM Product WHERE Id = @Id";
+                using (var command = new NpgsqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("Id", id);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

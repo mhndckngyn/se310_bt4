@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UUCrsPd0zIUDa1Z3133dsapA8M7wryn30MHrJTPKCF8=",
+  "Hash": "zwbWla5qLwwRmN6ZsLCWxfTaumcCCRK3ELwR3IJRYYY=",
   "Source": "ASP_MVC",
   "BasePath": "_content/ASP_MVC",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/linux-x64/scopedcss/bundle/ASP_MVC.styles.css",
+      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/scopedcss/bundle/ASP_MVC.styles.css",
       "SourceId": "ASP_MVC",
       "SourceType": "Computed",
-      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/linux-x64/scopedcss/bundle/",
+      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/scopedcss/bundle/",
       "BasePath": "_content/ASP_MVC",
       "RelativePath": "ASP_MVC.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/linux-x64/scopedcss/bundle/ASP_MVC.styles.css"
+      "OriginalItemSpec": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/scopedcss/bundle/ASP_MVC.styles.css"
     },
     {
-      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/linux-x64/scopedcss/projectbundle/ASP_MVC.bundle.scp.css",
+      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/scopedcss/projectbundle/ASP_MVC.bundle.scp.css",
       "SourceId": "ASP_MVC",
       "SourceType": "Computed",
-      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/linux-x64/scopedcss/projectbundle/",
+      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/scopedcss/projectbundle/",
       "BasePath": "_content/ASP_MVC",
       "RelativePath": "ASP_MVC.bundle.scp.css",
       "AssetKind": "All",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/linux-x64/scopedcss/projectbundle/ASP_MVC.bundle.scp.css"
+      "OriginalItemSpec": "/home/ducminh/RiderProjects/ASP_MVC/obj/Debug/net6.0/scopedcss/projectbundle/ASP_MVC.bundle.scp.css"
     },
     {
       "Identity": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/css/site.css",
@@ -1069,6 +1069,91 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/ProductImages/PRO01.PNG",
+      "SourceId": "ASP_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/",
+      "BasePath": "_content/ASP_MVC",
+      "RelativePath": "ProductImages/PRO01.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductImages/PRO01.PNG"
+    },
+    {
+      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/ProductImages/PRO02.PNG",
+      "SourceId": "ASP_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/",
+      "BasePath": "_content/ASP_MVC",
+      "RelativePath": "ProductImages/PRO02.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductImages/PRO02.PNG"
+    },
+    {
+      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/ProductImages/PRO03.PNG",
+      "SourceId": "ASP_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/",
+      "BasePath": "_content/ASP_MVC",
+      "RelativePath": "ProductImages/PRO03.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductImages/PRO03.PNG"
+    },
+    {
+      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/ProductImages/PRO04.PNG",
+      "SourceId": "ASP_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/",
+      "BasePath": "_content/ASP_MVC",
+      "RelativePath": "ProductImages/PRO04.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductImages/PRO04.PNG"
+    },
+    {
+      "Identity": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/ProductImages/PRO05.PNG",
+      "SourceId": "ASP_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ducminh/RiderProjects/ASP_MVC/wwwroot/",
+      "BasePath": "_content/ASP_MVC",
+      "RelativePath": "ProductImages/PRO05.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/ProductImages/PRO05.PNG"
     }
   ]
 }

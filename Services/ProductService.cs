@@ -16,4 +16,9 @@ public class ProductService
     {
         return _repository.GetProducts();
     }
+
+    public void DeleteProduct(int id)
+    { 
+        _repository.DeleteProduct(id);
+    }
 }

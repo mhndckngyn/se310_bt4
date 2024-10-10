@@ -15,7 +15,6 @@ public class CatalogController : Controller
 
     public IActionResult Index()
     {
-        Console.WriteLine("This is Catalog");
         var catalogs = _catalogService.GetAllCatalogs();
         return View(catalogs);
     }

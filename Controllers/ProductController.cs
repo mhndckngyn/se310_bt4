@@ -18,4 +18,10 @@ public class ProductController : Controller
         var products = _productService.GetAllProducts();
         return View(products);
     }
+
+    public IActionResult DeleteProduct(int id)
+    {
+        _productService.DeleteProduct(id);
+        return RedirectToAction("Index");
+    }
 }
